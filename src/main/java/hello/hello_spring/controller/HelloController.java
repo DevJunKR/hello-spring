@@ -19,4 +19,6 @@ public class HelloController {
         model.addAttribute("name", name);
         return "hello-template";
     }
+
+    // 커밋 테스트 주석
 }
