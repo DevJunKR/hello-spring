@@ -2,7 +2,6 @@ package hello.hello_spring.repository;
 
 import hello.hello_spring.domain.Member;
 
-import javax.swing.text.html.Option;
 import java.util.*;
 
 public class MemoryMemberRepository implements MemberRepository {
@@ -34,4 +33,9 @@ public class MemoryMemberRepository implements MemberRepository {
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
+
+    public void clearStore() {
+        store.clear();
+    }
+
 }
